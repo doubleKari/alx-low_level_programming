@@ -3,7 +3,6 @@
 /**
  * print_last_digit - checks number
  * @j: arguenent.
- *@i: variable
  * Return: i
  */
 int print_last_digit(int j)
