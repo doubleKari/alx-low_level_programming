@@ -1,24 +1,37 @@
 #include <stdio.h>
 
 /**
-  * main - Prints numbers b/n 0-100
-  *Return: Always 0
+  * main - Fizz-Buss test
+  * Return: Always 0 (Success)
   */
 
 int main(void)
 {
-int i;
+	int n;
 
-for (i = 1; i <= 100; i++)
-{
-if ((i % 3) == 0 && (i % 5) == 0)
-printf("FizzBuzz\t");
-else if (i % 3 == 0)
-printf("Fizz\t");
-else if (i % 5 == 0)
-printf("Buzz\t");
-else
-printf("%d\t", i);
-}
-return (0);
+	for (n = 1; n <= 100; n++)
+	{
+		if (n % 15 == 0)
+		{
+			printf("FizzBuzz");
+		}
+		else if (n % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (n % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+		{
+			printf("%d ", n);
+		}
+		if (n != 100)
+		{
+			putchar(' ');
+		}
+	}
+	printf("\n");
+	return (0);
 }
